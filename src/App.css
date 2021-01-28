@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+.page{
+    background-color: darkcyan;
+    overflow-y:hidden;
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.counter {
+    border:8px solid lightskyblue;
+    border-radius: 22px;
+    padding-bottom:15px;
+    display:block;
+    background-color: darkolivegreen;
+    width:300px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.wrapper {
+    border: 4px ridge rebeccapurple;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.buttons {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    font-weight: 600;
+
 }
 
-.App-link {
-  color: #61dafb;
+.inc button {
+    font-weight: bolder;
+    color: chocolate;
+    margin: 20px;
+    background-color: greenyellow;
+    width: 80px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.reset  button{
+    font-weight: bolder;
+    margin: 20px;
+    color: chocolate;
+    background-color: greenyellow;
+    width: 80px;
+}
+
+.display{
+    font-size: 100px;
+}
+
+.error-message{
+    color: red;
+    font-size: 100px;
 }
