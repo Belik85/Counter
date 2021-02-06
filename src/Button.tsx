@@ -1,6 +1,7 @@
 import React from "react";
 import './App.css';
 
+
 export type  ButtonPropsType = {
     onClick: () => void
     title:string

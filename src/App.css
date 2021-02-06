@@ -42,7 +42,7 @@
     width: 80px;
 }
 
-.reset  button{
+.reset button{
     font-weight: bolder;
     margin: 20px;
     color: chocolate;
@@ -58,3 +58,82 @@
     color: red;
     font-size: 100px;
 }
+
+
+
+.counters {
+    border:8px solid lightskyblue;
+    border-radius: 22px;
+    background-color: darkolivegreen;
+    width:300px;
+    margin:30px;
+    height:220px;
+
+
+
+}
+
+.wrappers{
+    border: 4px ridge rebeccapurple;
+    border-radius: 13px;
+    padding-top: 85px;
+}
+
+
+.min{
+       display: flex;
+    justify-content: space-around;
+    font-weight: bolder;
+    color: chocolate;
+
+
+    /*display: flex;*/
+    /*!*justify-content: center;*!*/
+    /*align-items: center;*/
+    /*font-weight: bolder;*/
+    /*color: chocolate;*/
+    /*!*margin: 20px;*!*/
+
+
+}
+
+.max{
+
+    display: flex;
+    justify-content: space-around;
+    font-weight: bolder;
+    color: chocolate;
+
+
+   /* align-items: center;*/
+
+   /* !*margin: 20px;*!*/
+
+
+}
+
+
+
+.setvalue Button{
+
+    color: chocolate;
+    background-color: greenyellow;
+    width: 80px;
+    font-weight: bolder;
+    margin: 20px;
+}
+
+
+
+
+
+/*font-weight: 600;*/
+/*display: flex;*/
+/*justify-content: center;*/
+
+/*}*/
+
+/*.setvalue {*/
+/*    display: flex;*/
+
+/*}*/
