@@ -1,9 +1,8 @@
-import React, {ChangeEvent, ChangeEventHandler, useState} from 'react';
+import React, {ChangeEvent, useState} from 'react';
 import Button from './Button';
 import Display from './Display';
 import Input from "./Input";
 import './App.css'
-
 
 function App() {
 
@@ -11,8 +10,6 @@ function App() {
     const [minValue, setMinValue] = useState<number>(1);
     const [maxValue, setMaxValue] = useState<number>(2);
     const [error, setError] = useState<string>("");
-    // const [error, setError] = useState<boolean>(false);
-
 
     const setValue = () => {
         setCount(minValue)
@@ -20,54 +17,24 @@ function App() {
 
     const onChangeMinValue = (e: ChangeEvent<HTMLInputElement>) => {
         const inputValue = +e.currentTarget.value
+        setMinValue(inputValue)
         if (inputValue > maxValue || inputValue < 0) {
             setError("Error")
-            setMinValue(inputValue)
             return
         }
         setMinValue(inputValue)
         setError('')
-        // if (+e.currentTarget.value < 0){
-        //     setError("error")
-        //     setMinValue(+e.currentTarget.value)
-        //     return
-        // }
-        // if (+e.currentTarget.value > maxValue){
-        //     setError('Incorrect value')
-        //     setMinValue(+e.currentTarget.value)
-        // }
-        // if (+e.currentTarget.value < maxValue && +e.currentTarget.value < 0){
-        //     setError('')
-        //     setMinValue(+e.currentTarget.value)
-        // }
-        //
-        // if (+e.currentTarget.value > 0) {
-        //     setMinValue(+e.currentTarget.value);
-        // }
-
-
-        // if (+e.currentTarget.value > maxValue){
-        //     setError(true)
-        // }
-        //
-        // if (+e.currentTarget.value > maxValue){
-        //     setError(true)
-        // }
     }
 
     const onChangeMaxValue = (e: ChangeEvent<HTMLInputElement>) => {
         const inputValue = +e.currentTarget.value
-        console.log(inputValue)
+        setMaxValue(inputValue)
         if (inputValue < minValue || inputValue < 0) {
             setError("Error")
-            setMaxValue(inputValue)
             return
         }
         setMaxValue(inputValue)
         setError('')
-        // if (inputValue > minValue) {
-        //     setMaxValue(inputValue)
-        // }
     }
 
     const increment = () => {
@@ -79,7 +46,6 @@ function App() {
     const reset = () => {
         setCount(0)
     }
-
 
     return (
         <div className="page">
