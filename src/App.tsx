@@ -26,6 +26,7 @@ function App() {
         setError('')
     }
 
+
     const onChangeMaxValue = (e: ChangeEvent<HTMLInputElement>) => {
         const inputValue = +e.currentTarget.value
         setMaxValue(inputValue)
